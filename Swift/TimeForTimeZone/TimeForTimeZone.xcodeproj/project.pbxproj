@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCFD49481A67516400DDFA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFD49471A67516400DDFA8D /* AppDelegate.swift */; };
+		CCFD494A1A67516400DDFA8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFD49491A67516400DDFA8D /* ViewController.swift */; };
+		CCFD494D1A67516400DDFA8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFD494B1A67516400DDFA8D /* Main.storyboard */; };
+		CCFD494F1A67516400DDFA8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCFD494E1A67516400DDFA8D /* Images.xcassets */; };
+		CCFD49521A67516400DDFA8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCFD49501A67516400DDFA8D /* LaunchScreen.xib */; };
+		CCFD495E1A67516400DDFA8D /* TimeForTimeZoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFD495D1A67516400DDFA8D /* TimeForTimeZoneTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCFD49581A67516400DDFA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCFD493A1A67516400DDFA8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCFD49411A67516400DDFA8D;
+			remoteInfo = TimeForTimeZone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCFD49421A67516400DDFA8D /* TimeForTimeZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeForTimeZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCFD49461A67516400DDFA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCFD49471A67516400DDFA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCFD49491A67516400DDFA8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCFD494C1A67516400DDFA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCFD494E1A67516400DDFA8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CCFD49511A67516400DDFA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CCFD49571A67516400DDFA8D /* TimeForTimeZoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeForTimeZoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCFD495C1A67516400DDFA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCFD495D1A67516400DDFA8D /* TimeForTimeZoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeForTimeZoneTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCFD493F1A67516400DDFA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCFD49541A67516400DDFA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCFD49391A67516400DDFA8D = {
+			isa = PBXGroup;
+			children = (
+				CCFD49441A67516400DDFA8D /* TimeForTimeZone */,
+				CCFD495A1A67516400DDFA8D /* TimeForTimeZoneTests */,
+				CCFD49431A67516400DDFA8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCFD49431A67516400DDFA8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCFD49421A67516400DDFA8D /* TimeForTimeZone.app */,
+				CCFD49571A67516400DDFA8D /* TimeForTimeZoneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCFD49441A67516400DDFA8D /* TimeForTimeZone */ = {
+			isa = PBXGroup;
+			children = (
+				CCFD49471A67516400DDFA8D /* AppDelegate.swift */,
+				CCFD49491A67516400DDFA8D /* ViewController.swift */,
+				CCFD494B1A67516400DDFA8D /* Main.storyboard */,
+				CCFD494E1A67516400DDFA8D /* Images.xcassets */,
+				CCFD49501A67516400DDFA8D /* LaunchScreen.xib */,
+				CCFD49451A67516400DDFA8D /* Supporting Files */,
+			);
+			path = TimeForTimeZone;
+			sourceTree = "<group>";
+		};
+		CCFD49451A67516400DDFA8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCFD49461A67516400DDFA8D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCFD495A1A67516400DDFA8D /* TimeForTimeZoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCFD495D1A67516400DDFA8D /* TimeForTimeZoneTests.swift */,
+				CCFD495B1A67516400DDFA8D /* Supporting Files */,
+			);
+			path = TimeForTimeZoneTests;
+			sourceTree = "<group>";
+		};
+		CCFD495B1A67516400DDFA8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCFD495C1A67516400DDFA8D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCFD49411A67516400DDFA8D /* TimeForTimeZone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCFD49611A67516400DDFA8D /* Build configuration list for PBXNativeTarget "TimeForTimeZone" */;
+			buildPhases = (
+				CCFD493E1A67516400DDFA8D /* Sources */,
+				CCFD493F1A67516400DDFA8D /* Frameworks */,
+				CCFD49401A67516400DDFA8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeForTimeZone;
+			productName = TimeForTimeZone;
+			productReference = CCFD49421A67516400DDFA8D /* TimeForTimeZone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCFD49561A67516400DDFA8D /* TimeForTimeZoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCFD49641A67516400DDFA8D /* Build configuration list for PBXNativeTarget "TimeForTimeZoneTests" */;
+			buildPhases = (
+				CCFD49531A67516400DDFA8D /* Sources */,
+				CCFD49541A67516400DDFA8D /* Frameworks */,
+				CCFD49551A67516400DDFA8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCFD49591A67516400DDFA8D /* PBXTargetDependency */,
+			);
+			name = TimeForTimeZoneTests;
+			productName = TimeForTimeZoneTests;
+			productReference = CCFD49571A67516400DDFA8D /* TimeForTimeZoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCFD493A1A67516400DDFA8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = CocuyoStudio;
+				TargetAttributes = {
+					CCFD49411A67516400DDFA8D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					CCFD49561A67516400DDFA8D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = CCFD49411A67516400DDFA8D;
+					};
+				};
+			};
+			buildConfigurationList = CCFD493D1A67516400DDFA8D /* Build configuration list for PBXProject "TimeForTimeZone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCFD49391A67516400DDFA8D;
+			productRefGroup = CCFD49431A67516400DDFA8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCFD49411A67516400DDFA8D /* TimeForTimeZone */,
+				CCFD49561A67516400DDFA8D /* TimeForTimeZoneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCFD49401A67516400DDFA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCFD494D1A67516400DDFA8D /* Main.storyboard in Resources */,
+				CCFD49521A67516400DDFA8D /* LaunchScreen.xib in Resources */,
+				CCFD494F1A67516400DDFA8D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCFD49551A67516400DDFA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCFD493E1A67516400DDFA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCFD494A1A67516400DDFA8D /* ViewController.swift in Sources */,
+				CCFD49481A67516400DDFA8D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCFD49531A67516400DDFA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCFD495E1A67516400DDFA8D /* TimeForTimeZoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCFD49591A67516400DDFA8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCFD49411A67516400DDFA8D /* TimeForTimeZone */;
+			targetProxy = CCFD49581A67516400DDFA8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCFD494B1A67516400DDFA8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCFD494C1A67516400DDFA8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCFD49501A67516400DDFA8D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCFD49511A67516400DDFA8D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCFD495F1A67516400DDFA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCFD49601A67516400DDFA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCFD49621A67516400DDFA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TimeForTimeZone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CCFD49631A67516400DDFA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TimeForTimeZone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CCFD49651A67516400DDFA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TimeForTimeZoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeForTimeZone.app/TimeForTimeZone";
+			};
+			name = Debug;
+		};
+		CCFD49661A67516400DDFA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TimeForTimeZoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeForTimeZone.app/TimeForTimeZone";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCFD493D1A67516400DDFA8D /* Build configuration list for PBXProject "TimeForTimeZone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCFD495F1A67516400DDFA8D /* Debug */,
+				CCFD49601A67516400DDFA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCFD49611A67516400DDFA8D /* Build configuration list for PBXNativeTarget "TimeForTimeZone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCFD49621A67516400DDFA8D /* Debug */,
+				CCFD49631A67516400DDFA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCFD49641A67516400DDFA8D /* Build configuration list for PBXNativeTarget "TimeForTimeZoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCFD49651A67516400DDFA8D /* Debug */,
+				CCFD49661A67516400DDFA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCFD493A1A67516400DDFA8D /* Project object */;
+}
