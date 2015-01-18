@@ -14,6 +14,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var dateTimeZoneLabel: UILabel!
     @IBOutlet weak var timeTimeZoneLable: UILabel!
     @IBOutlet weak var timeZoneLabel: UILabel!
+    @IBOutlet weak var outputContainerView: UIView!
     var backgroundImageView:UIImageView?
     
     var timeZoneNames = [AnyObject]()
@@ -27,6 +28,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         populateTimeZones()
         displayTimeZoneForSelectedRow(0)
         setupBgImage()
+        outputContainerBorder()
         
     }
 
@@ -89,6 +91,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     
     // MARK: Helper Methods
+    
+    func outputContainerBorder() {
+        outputContainerView.layer.borderColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 0.25).CGColor
+        outputContainerView.layer.borderWidth = 0.3
+    }
+    
     
     func setupBgImage() {
         let background = UIImage(named: "TimeZoneBackground")

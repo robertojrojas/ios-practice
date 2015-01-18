@@ -82,6 +82,7 @@
                     </view>
                     <connections>
                         <outlet property="dateTimeZoneLabel" destination="DCt-qA-2g1" id="AWe-84-zOq"/>
+                        <outlet property="outputContainerView" destination="5JL-ht-jBY" id="x12-9m-9KJ"/>
                         <outlet property="timeTimeZoneLable" destination="7NT-HY-z7R" id="ieT-Do-3Qf"/>
                         <outlet property="timeZoneLabel" destination="xWq-Z0-raQ" id="FGT-pa-VWA"/>
                         <outlet property="timeZonePicker" destination="66z-Ks-LOy" id="Jpc-SW-IzP"/>
