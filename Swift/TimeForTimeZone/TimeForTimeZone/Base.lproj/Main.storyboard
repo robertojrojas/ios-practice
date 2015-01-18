@@ -22,9 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TimeZoneBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cGT-58-0mh">
-                                <rect key="frame" x="0.0" y="-67" width="600" height="667"/>
-                            </imageView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66z-Ks-LOy">
                                 <rect key="frame" x="0.0" y="142" width="600" height="162"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -72,16 +69,13 @@
                         <color key="tintColor" red="0.12941176470588234" green="0.12156862745098039" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="5JL-ht-jBY" firstAttribute="top" secondItem="2Ql-Mi-r9Q" secondAttribute="bottom" constant="316" id="0px-ul-ld9"/>
-                            <constraint firstItem="66z-Ks-LOy" firstAttribute="leading" secondItem="cGT-58-0mh" secondAttribute="leading" id="5I5-tz-DNS"/>
                             <constraint firstItem="66z-Ks-LOy" firstAttribute="centerX" secondItem="8cF-42-wXC" secondAttribute="centerX" constant="5" id="JnN-cP-gVb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5JL-ht-jBY" secondAttribute="trailing" constant="20" id="PPG-2K-BIe"/>
                             <constraint firstAttribute="centerX" secondItem="8cF-42-wXC" secondAttribute="centerX" constant="5" id="QNF-nq-rgo"/>
-                            <constraint firstItem="cGT-58-0mh" firstAttribute="bottom" secondItem="Bqb-aw-Szb" secondAttribute="top" id="Qz5-q0-6Zm"/>
                             <constraint firstItem="8cF-42-wXC" firstAttribute="top" secondItem="2Ql-Mi-r9Q" secondAttribute="bottom" constant="30" id="ac6-r7-vjg"/>
                             <constraint firstItem="5JL-ht-jBY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="hEb-Yk-jLQ"/>
                             <constraint firstItem="5JL-ht-jBY" firstAttribute="top" secondItem="66z-Ks-LOy" secondAttribute="bottom" constant="32" id="i6z-Pw-wNg"/>
                             <constraint firstItem="66z-Ks-LOy" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="iJV-Lw-l0P"/>
-                            <constraint firstItem="66z-Ks-LOy" firstAttribute="trailing" secondItem="cGT-58-0mh" secondAttribute="trailing" id="iaP-wX-A6s"/>
                             <constraint firstItem="Bqb-aw-Szb" firstAttribute="top" secondItem="5JL-ht-jBY" secondAttribute="bottom" constant="24" id="pHa-A8-PAf"/>
                             <constraint firstItem="66z-Ks-LOy" firstAttribute="top" secondItem="8cF-42-wXC" secondAttribute="bottom" constant="34" id="y0M-fK-g4G"/>
                         </constraints>
@@ -98,7 +92,4 @@
             <point key="canvasLocation" x="303" y="427"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="TimeZoneBackground" width="375" height="667"/>
-    </resources>
 </document>

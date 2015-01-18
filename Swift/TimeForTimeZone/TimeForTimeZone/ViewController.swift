@@ -14,6 +14,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var dateTimeZoneLabel: UILabel!
     @IBOutlet weak var timeTimeZoneLable: UILabel!
     @IBOutlet weak var timeZoneLabel: UILabel!
+    var backgroundImageView:UIImageView?
     
     var timeZoneNames = [AnyObject]()
     var timeZones     = [AnyObject]()
@@ -25,6 +26,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         // Do any additional setup after loading the view, typically from a nib.
         populateTimeZones()
         displayTimeZoneForSelectedRow(0)
+        setupBgImage()
         
     }
 
@@ -33,10 +35,21 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         // Dispose of any resources that can be recreated.
     }
     
+    func setupBgImage() {
+        let background = UIImage(named: "TimeZoneBackground")
+        self.backgroundImageView = UIImageView(image: background!)
+        var bgImageViewFrame = self.backgroundImageView!.frame
+        bgImageViewFrame.size.width = self.view.bounds.size.width
+        bgImageViewFrame.size.height = self.view.bounds.size.height
+        self.backgroundImageView!.frame = bgImageViewFrame
+        self.backgroundImageView!.layer.zPosition = -1
+        self.backgroundImageView!.contentMode = UIViewContentMode.ScaleAspectFill;
+        self.view.addSubview(self.backgroundImageView!)
+    }
+    
     
     func populateTimeZones() {
         let abbreviationDictionary = NSTimeZone.abbreviationDictionary()
-        //println("available timeZones: \(abbreviationDictionary.count)")
         for (timeZoneName,timeZone) in abbreviationDictionary {
             timeZones.append(timeZone)
             timeZoneNames.append(timeZoneName)
