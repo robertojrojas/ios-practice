@@ -35,25 +35,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         // Dispose of any resources that can be recreated.
     }
     
-    func setupBgImage() {
-        let background = UIImage(named: "TimeZoneBackground")
-        self.backgroundImageView = UIImageView(image: background!)
-        var bgImageViewFrame = self.backgroundImageView!.frame
-        bgImageViewFrame.size.width = self.view.bounds.size.width
-        bgImageViewFrame.size.height = self.view.bounds.size.height
-        self.backgroundImageView!.frame = bgImageViewFrame
-        self.backgroundImageView!.layer.zPosition = -1
-        self.backgroundImageView!.contentMode = UIViewContentMode.ScaleAspectFill;
-        self.view.addSubview(self.backgroundImageView!)
-    }
-    
-    
-    func populateTimeZones() {
-        let abbreviationDictionary = NSTimeZone.abbreviationDictionary()
-        for (timeZoneName,timeZone) in abbreviationDictionary {
-            timeZones.append(timeZone)
-            timeZoneNames.append(timeZoneName)
-        }
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
     
     
@@ -107,6 +90,28 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     // MARK: Helper Methods
     
+    func setupBgImage() {
+        let background = UIImage(named: "TimeZoneBackground")
+        self.backgroundImageView = UIImageView(image: background!)
+        var bgImageViewFrame = self.backgroundImageView!.frame
+        bgImageViewFrame.size.width = self.view.bounds.size.width
+        bgImageViewFrame.size.height = self.view.bounds.size.height
+        self.backgroundImageView!.frame = bgImageViewFrame
+        self.backgroundImageView!.layer.zPosition = -1
+        self.backgroundImageView!.contentMode = UIViewContentMode.ScaleAspectFill;
+        self.view.addSubview(self.backgroundImageView!)
+    }
+   
+    
+    func populateTimeZones() {
+        let abbreviationDictionary = NSTimeZone.abbreviationDictionary()
+        for (timeZoneName,timeZone) in abbreviationDictionary {
+            timeZones.append(timeZone)
+            timeZoneNames.append(timeZoneName)
+        }
+    }
+    
+    
     func displayTimeZoneForSelectedRow(row: Int) {
         let now = NSDate()
         let timeZoneName = timeZoneNames[row] as String
@@ -116,6 +121,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         timeZoneLabel.text     = extractTimeZoneName(now, timeZoneName: timeZoneName)
         
     }
+    
     
     func extractDate(theDate: NSDate, timeZoneName: String) -> String {
         
@@ -128,6 +134,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
     }
     
+    
     func extractTime(theDate: NSDate, timeZoneName: String) -> String {
         dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
         dateFormatter.dateStyle = NSDateFormatterStyle.NoStyle
@@ -136,6 +143,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         return timeZoneStr
     }
+    
     
     func extractTimeZoneName(theDate: NSDate, timeZoneName: String) -> String {
         let timeZone = NSTimeZone(abbreviation: timeZoneName)
