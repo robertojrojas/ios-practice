@@ -28,7 +28,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         populateTimeZones()
         displayTimeZoneForSelectedRow(0)
         setupBgImage()
-        outputContainerBorder()
+        customizeOutputContainer()
         
     }
 
@@ -37,6 +37,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         // Dispose of any resources that can be recreated.
     }
     
+   
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
@@ -91,10 +92,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     
     // MARK: Helper Methods
-    
-    func outputContainerBorder() {
+   
+    func customizeOutputContainer() {
         outputContainerView.layer.borderColor = UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 0.25).CGColor
         outputContainerView.layer.borderWidth = 0.3
+        insertBlurView(outputContainerView)
     }
     
     
@@ -109,6 +111,20 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         self.backgroundImageView!.contentMode = UIViewContentMode.ScaleAspectFill;
         self.view.addSubview(self.backgroundImageView!)
     }
+    
+    
+    func insertBlurView (targetView: UIView) {
+        var blurView = UIImageView()
+        let blurImage = UIImage(named: "OutputContainerBlur")
+        blurView.image = blurImage
+        var viewBounds = targetView.bounds
+        blurView.frame = viewBounds
+        viewBounds.size.width  = (viewBounds.size.width / 2.0) + 40.0
+        viewBounds.size.height = viewBounds.size.height + 68.0
+        blurView.frame = viewBounds
+        targetView.insertSubview(blurView, atIndex: 0)
+    }
+
    
     
     func populateTimeZones() {
@@ -123,7 +139,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func displayTimeZoneForSelectedRow(row: Int) {
         let now = NSDate()
         let timeZoneName = timeZoneNames[row] as String
-        
         dateTimeZoneLabel.text = extractDate(now, timeZoneName: timeZoneName)
         timeTimeZoneLable.text = extractTime(now, timeZoneName: timeZoneName)
         timeZoneLabel.text     = extractTimeZoneName(now, timeZoneName: timeZoneName)
@@ -132,7 +147,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     
     func extractDate(theDate: NSDate, timeZoneName: String) -> String {
-        
         dateFormatter.timeStyle =  NSDateFormatterStyle.NoStyle
         dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
         dateFormatter.timeZone  = NSTimeZone(abbreviation: timeZoneName)

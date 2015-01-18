@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC8645D71A6C222100F17765 /* TimeForTimeZone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimeForTimeZone-Bridging-Header.h"; sourceTree = "<group>"; };
 		CCAE19D21A6B0ECD005D6B67 /* Teko-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Light.ttf"; sourceTree = "<group>"; };
 		CCFD49421A67516400DDFA8D /* TimeForTimeZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeForTimeZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFD49461A67516400DDFA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 				CCFD494E1A67516400DDFA8D /* Images.xcassets */,
 				CCFD49501A67516400DDFA8D /* LaunchScreen.xib */,
 				CCFD49451A67516400DDFA8D /* Supporting Files */,
+				CC8645D71A6C222100F17765 /* TimeForTimeZone-Bridging-Header.h */,
 			);
 			path = TimeForTimeZone;
 			sourceTree = "<group>";
@@ -340,9 +342,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TimeForTimeZone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TimeForTimeZone/TimeForTimeZone-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +355,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TimeForTimeZone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TimeForTimeZone/TimeForTimeZone-Bridging-Header.h";
 			};
 			name = Release;
 		};
