@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCAE19D31A6B0ECD005D6B67 /* Teko-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCAE19D21A6B0ECD005D6B67 /* Teko-Light.ttf */; };
 		CCFD49481A67516400DDFA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFD49471A67516400DDFA8D /* AppDelegate.swift */; };
 		CCFD494A1A67516400DDFA8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFD49491A67516400DDFA8D /* ViewController.swift */; };
 		CCFD494D1A67516400DDFA8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFD494B1A67516400DDFA8D /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CCAE19D21A6B0ECD005D6B67 /* Teko-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Light.ttf"; sourceTree = "<group>"; };
 		CCFD49421A67516400DDFA8D /* TimeForTimeZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeForTimeZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFD49461A67516400DDFA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCFD49471A67516400DDFA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		CCFD49441A67516400DDFA8D /* TimeForTimeZone */ = {
 			isa = PBXGroup;
 			children = (
+				CCAE19D21A6B0ECD005D6B67 /* Teko-Light.ttf */,
 				CCFD49471A67516400DDFA8D /* AppDelegate.swift */,
 				CCFD49491A67516400DDFA8D /* ViewController.swift */,
 				CCFD494B1A67516400DDFA8D /* Main.storyboard */,
@@ -194,6 +197,7 @@
 			files = (
 				CCFD494D1A67516400DDFA8D /* Main.storyboard in Resources */,
 				CCFD49521A67516400DDFA8D /* LaunchScreen.xib in Resources */,
+				CCAE19D31A6B0ECD005D6B67 /* Teko-Light.ttf in Resources */,
 				CCFD494F1A67516400DDFA8D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +409,7 @@
 				CCFD49631A67516400DDFA8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCFD49641A67516400DDFA8D /* Build configuration list for PBXNativeTarget "TimeForTimeZoneTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				CCFD49661A67516400DDFA8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
