@@ -50,10 +50,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         return 1
     }
     
-    // returns the # of rows in each component..
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return timeZones.count
     }
+    
     
     // MARK: UIPickerViewDelegate
     
@@ -90,6 +90,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         displayTimeZoneForSelectedRow(row)
     }
+    
+    
+    // MARK: Helper Methods
     
     func displayTimeZoneForSelectedRow(row: Int) {
         let now = NSDate()
