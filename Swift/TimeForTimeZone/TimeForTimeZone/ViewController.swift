@@ -26,7 +26,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         populateTimeZones()
         displayTimeZoneForSelectedRow(0)
         
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,29 +58,29 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     // MARK: UIPickerViewDelegate
     
     func pickerView(pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
-        return 54.0
+        return 44.0
     }
     
-//    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView!) -> UIView {
-//        
-//        var outputView = view
-//        
-//        if (outputView == nil) {
-//        
-//            outputView = UIView()
-//            outputView.backgroundColor = UIColor.clearColor()
-//            var label = UILabel()
-//            label.backgroundColor = UIColor.whiteColor()
-//            outputView.addSubview(label)
-//        }
-//        
-//        return outputView
-//        
-//        
-//    }
+    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView!) -> UIView {
+        
+        var pickerLabel = view as UILabel!
+        if view == nil {  //if no label there yet
+            pickerLabel = UILabel()
+            let titleData = timeZones[row] as String
+            let pickerLabelTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Avenir Next Demi Bold", size: 20.0)!,NSForegroundColorAttributeName:UIColor.whiteColor()])
+            pickerLabel.attributedText = pickerLabelTitle
+            
+            //color  and center the label's background
+            let hue = CGFloat(row)/CGFloat(timeZoneNames.count)
+            pickerLabel.backgroundColor = UIColor.clearColor()
+            pickerLabel.textAlignment = .Center
+        }
+        
+        return pickerLabel
+    }
+    
     
     func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        
         
         let title = NSMutableAttributedString(string: "\(timeZones[row])", attributes: nil)
         return title
